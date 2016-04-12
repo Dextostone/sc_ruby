@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-	
+	#Test comment for Hound	
 	http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
 	
 	def index
