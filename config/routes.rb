@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :members,:controllers => { :registrations =>'registration'}
+  match 'dashboard' => 'welcome#dashboard', via: :get
+  
   resources :articles do
     resources :comments
   end
