@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: sc_ruby_production
-  username: sc_ruby
-  password: <%= ENV['SC_RUBY_DATABASE_PASSWORD'] %>
+  # username: sc_ruby
+  # password: <%= ENV['SC_RUBY_DATABASE_PASSWORD'] %>
