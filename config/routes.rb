@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :members,:controllers => { :registrations =>'registration'}
+  devise_for :members,:controllers => { :registrations =>'registration',
+                                        :omniauth_callbacks => "callbacks"}
   match 'dashboard' => 'welcome#dashboard', via: :get
   
   resources :articles do
